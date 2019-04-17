@@ -25,4 +25,8 @@
     <name>hadoop.tmp.dir</name>
     <value>file:/home/hadoop/data/hdfs/tmp</value>
   </property>
+  <property>
+    <name>fs.trash.interval</name>
+    <value>1440</value>
+  </property>
 </configuration>

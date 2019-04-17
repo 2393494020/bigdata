@@ -23,3 +23,7 @@ edit /etc/udev/rules.d/70-persistent-net.rules
 $ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa  
 $ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys  
 $ chmod 0600 ~/.ssh/authorized_keys
+
+# 运维命令
+>直接删除，不入回收站  
+>hadoop fs -rm -r -skipTrash
