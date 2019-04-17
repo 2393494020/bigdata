@@ -26,6 +26,11 @@
     <value>file:/home/hadoop/data/hdfs/tmp</value>
   </property>
   <property>
+    <name>io.file.buffer.size</name>
+    <value>65536</value><!--64M-->
+    <!--value>131072</value-->
+  </property>
+  <property>
     <name>fs.trash.interval</name>
     <value>1440</value>
   </property>
