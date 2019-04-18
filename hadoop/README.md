@@ -1,3 +1,9 @@
+# building
+1. sudo apt install[yum -y] install g++ autoconf automake libtool cmake zlib1g-dev pkg-config libssl-dev
+2. https://github.com/protocolbuffers/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz
+3. cd /opt/cpp/protobuf > ./configure --prefix=/opt/cpp/protobuf > make > make install
+4. mvn clean package -Pdist,native -DskipTests -Dtar
+
 # centos 6 settings
 ## selinux
 /etc/selinux/config  
