@@ -33,3 +33,5 @@ $ chmod 0600 ~/.ssh/authorized_keys
 # 运维命令
 >直接删除，不入回收站  
 >hadoop fs -rm -r -skipTrash
+
+## process
