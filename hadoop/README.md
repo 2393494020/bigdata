@@ -1,7 +1,7 @@
 # building
 1. sudo apt install[yum -y] install g++ autoconf automake libtool cmake zlib1g-dev pkg-config libssl-dev
 2. https://github.com/protocolbuffers/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz
-3. cd /opt/cpp/protobuf > ./configure --prefix=/opt/cpp/protobuf > make > make install > protoc --version
+3. cd /opt/cpp/protobuf > ./configure --prefix=/opt/cpp/protobuf > make > make install > protoc --version > export LD_LIBRARY_PATH=/opt/cpp/protobuf
 4. mvn clean package -Pdist,native -DskipTests -Dtar
 
 # centos 6 settings
@@ -33,3 +33,17 @@ $ chmod 0600 ~/.ssh/authorized_keys
 # 运维命令
 >直接删除，不入回收站  
 >hadoop fs -rm -r -skipTrash
+
+## process
+```flow
+st=>start:fs -ls
+op1=>operation:classpath
+op2=>operation:FsShell
+op3=>operation:Ls
+op4=>operation:PathData
+op5=>operation:Path
+op6=>operation:FileSystem
+op6=>operation:DistributedFileSystem
+e=>end:finish
+st->op1->op2->op3->op4->op5->op6->e
+```
